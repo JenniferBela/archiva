@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiva</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="styles/assets/images.jpg" alt="Archiva">        
+            </div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cer.html">CERs</a></li>
+                <li><a href="favoris.html">Mes CER Favoris</a></li>
+                <li><a href="gestion.html">Gestion de CER</a></li>
+            </ul>
+            <button class="connexion">Connexion</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">  
+
+            <div class="hero-content">
+                <h2>Mes CERs favoris</h2>
+            </div>
+
+            <div class="recherche">
+
+                <div class="total-cer">
+                    <h3>25 CERs Au Total</h3>
+                </div>
+
+                <div class="search-bar">
+                    <input type="search" placeholder="Rechercher un CER...">
+                    <button>🔍︎</button>
+                </div>
+
+                <div class="sort">
+
+                    <h3>Sort By:</h3>
+
+                    <select>
+                        <option value="titre">Titre</option>
+                    </select>
+
+                    <button class="view-btn active">
+                        <span class="grid-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="cer-content">
+
+            <aside class="cer-filters">
+                <div class="filter-group">
+                    <h3>Niveaux</h3>
+
+                    <div class="niveaux">
+
+                        <label>
+                            <input type="checkbox">
+                            <span>X5</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>X4</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>X3</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>X2</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>X1</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Specialites</h3>
+
+                    <div class="niveaux">
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Reseaux & Infra</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Genie-logiciel</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Gestion de projet</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Data</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>Securite</span>
+                        </label>
+                    </div>
+
+                </div>
+            </aside>
+
+            <div class="cer-cards">
+
+                <article class="cer-card">
+                    <img src="styles/assets/uml.jpg" alt="UML">
+                        <div class="cer-info">
+                            <p>par Pauline lock</p>
+                            <h3>Prosit 2.2 Modelisation UML</h3>
+                            <p>
+                                Le langage de Modelisation Unifie,
+                                de l'anglais Unified Modeling
+                                Language, est un langage de 
+                                modelisation graphique a base de 
+                                pictogrammes concu comme...
+                            </p>
+                            <button class="favori-btn">❤️</button>
+                            <button class="consult">Consulter le CER</button>
+                        </div>
+                </article>
+
+                <article class="cer-card">
+                    <img src="styles/assets/api.jpg" alt="API">
+                        <div class="cer-info">
+                            <p>par Daryl Noupik</p>
+                            <h3>Prosit 3.3 API et Webservice</h3>
+                            <p>
+                                Les API sont principalement axees sur
+                                la communication entre applications
+                                pour l'acces aux fonctionnalite. L'EDI
+                                se concentre sur l'echange de
+                                documents...
+                            </p>
+                            <button class="favori-btn">❤️</button>
+                            <button class="consult">Consulter le CER</button>
+                        </div>
+                </article>
+
+                <article class="cer-card">
+                    <img src="styles/assets/microservices-architecture.jpg" alt="Microservices">
+                        <div class="cer-info">
+                            <p>par Providence Djekoun.</p>
+                            <h3>Prosit 4.5 Architecture microservices</h3>
+                            <p>
+                                Une architecture de microservices est
+                                un type d'architecture d'application 
+                                dans laquelle l'application est 
+                                developpee sous la forme d'un
+                                ensemble de services...
+                            </p>
+                            <button class="favori-btn">❤️</button>
+                            <button class="consult">Consulter le CER</button>
+                        </div>
+                </article>
+
+                <article class="cer-card">
+                    <img src="styles/assets/distribuee-architecture.jpg" alt="Distribuee">
+                        <div class="cer-info">
+                            <p>par Providence Djekoun</p>
+                            <h3>Prosit 4.5 Architecture distribuee</h3>
+                            <p>
+                                L'architecture distribuee ou 
+                                l'informatique distribuee designe un
+                                systeme d'informations ou un reseau
+                                pour lequel l'ensemble des ressources
+                                disponibles ne se trouvent...
+                            </p>
+                            <button class="favori-btn">❤️</button>
+                            <button class="consult">Consulter le CER</button>
+                        </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+
+            <div class="footer-column">
+                <img src="styles/assets/images.jpg" alt="Archiva" class="footer-logo">
+
+                <p>jenniferbelante@archiva.com</p>
+                <p>+237 650 468 752</p>
+                <p>Yansoki, Douala</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Navigation</h3>
+
+                <a href="index.html">Accueil</a>
+                <a href="cer.html">CERs</a>
+                <a href="favoris.html">Mes CERs favoris</a>
+                <a href="gestion.html">Gestion de CER</a>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Social Profiles</h3>
+
+                <div class="social-profiles">
+                    <a href="#">
+                        <img src="styles/assets/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#">
+                        <img src="styles/assets/instagram.webp" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img src="styles/assets/tiktok.image" alt="TikTok">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

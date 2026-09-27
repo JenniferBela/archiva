@@ -1,0 +1,741 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul {
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 30px;
+    list-style: none;
+}
+ul a {
+    color: gray;
+    text-decoration: none;
+}
+.logo img {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: auto;
+}
+
+.connexion {
+    color: white;
+    background-color: orange;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.search-bar input {
+    width: 500px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+}
+.search-bar button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+.hero-content {
+    text-align: center;
+    margin-top: 70px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.hero-content h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+.hero-content h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+    size: 50px;
+}
+.btn-explorer {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    
+}
+.btn-tous {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.feature-section {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+.cer-header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 10px
+}
+.best-cer h1 {
+    color: black;
+    margin-bottom: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.best-cer h3 {
+    color: gray;
+    font-weight: normal;
+    max-width: 800px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.more {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px
+
+}
+.cer-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.cer-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px
+}
+.cer-info {
+    padding: 25px;
+}
+.cer-info h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.cer-info p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    line-height: 1.5;
+}
+.consult {
+    background-color: gray;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+footer {
+    background-color: white;
+    margin-top: 80px;
+    padding: 50px 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px; 
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.footer-column h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+}
+.social-profiles {
+    display: flex;
+    gap: 15px;
+}
+
+.social-profiles img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/*cer.html*/
+.recherche {
+    width: 90%;
+    margin: 30px auto 0;
+
+    display: grid;
+    grid-template-columns: 1fr 400px 1fr;
+    align-items: center;
+
+    min-height: 50px;
+}
+
+.total-cer {
+    justify-self: start;
+}
+
+.total-cer h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* MILIEU */
+.search-bar {
+    justify-self: center;
+    align-self: center;
+    transform: translateY(-2px);
+
+    width: 400px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex: 1;
+
+    height: 100%;
+
+    padding: 0 15px;
+
+    border: none;
+    outline: none;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+.search-bar input::placeholder {
+    color: #999;
+}
+
+.search-bar button {
+    width: 45px;
+    height: 100%;
+
+    border: none;
+    background: transparent;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.sort {
+    justify-self: end;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sort h3 {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.sort select {
+    height: 40px;
+
+    padding: 0 30px 0 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    background-color: white;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.view-btn {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    background-color: white;
+
+    cursor: pointer;
+}
+
+
+.view-btn.active {
+    background-color: #f58220;
+    border-color: #f58220;
+}
+
+.grid-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 5px);
+    grid-template-rows: repeat(2, 5px);
+    gap: 3px;
+}
+
+.grid-icon span {
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 1px;
+}
+
+
+.list-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.list-icon span {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #555;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cer-content {
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 50px;
+}
+
+.filter-group {
+    margin-bottom: 40px;
+}
+
+.filter-group h3 {
+    margin-bottom: 15px;
+}
+
+.niveaux {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.niveaux div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.domaines {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.domaines div {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.cer-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.gestion-cer {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.gestion-header {
+    width: 90%;
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filtre {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filtre select {
+    padding: 8px 30px 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ajouter-cer {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cer-table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.cer-table th,
+.cer-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cer-table th {
+    font-weight: 600;
+}
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.actions button {
+    border: none;
+    background: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.editer {
+    color: #f58220;
+}
+
+.supprimer {
+    color: red;
+}
+
+.ajouter-cer-page {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+}
+
+.ajouter-cer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.ajouter-cer-header h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.fermer {
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: #555;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    height: 45px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.domaines-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.domaines-checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.domaines-checkbox input {
+    width: 17px;
+    height: 17px;
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 130px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.fichier-box {
+    width: 100%;
+    height: 150px;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #777;
+}
+
+.fichier-box input {
+    display: none;
+}
+
+.fichier-icon {
+    font-size: 35px;
+    color: orange;
+}
+
+.fichier-box em {
+    font-size: 13px;
+    color: #888;
+}
+
+.enregistrer {
+    display: block;
+    margin: 30px auto 0;
+    padding: 11px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.connexion-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #fff8f0, #ffe2c7);
+}
+
+.connexion-card {
+    width: 850px;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.connexion-form {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.connexion-form h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.connexion-group {
+    margin-bottom: 20px;
+}
+
+.connexion-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.connexion-group input {
+    width: 100%;
+    height: 45px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.connexion-group select {
+    width: 100%;
+    height: 45px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.password-input {
+    position: relative;
+}
+
+.password-input input {
+    padding-right: 45px;
+}
+
+.eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    color: #777;
+    cursor: pointer;
+}
+
+.mot-de-passe-oublie {
+    display: block;
+    margin-top: 8px;
+    text-align: right;
+    color: orange;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.connexion-submit {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.creation-compte {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+}
+
+.creation-compte a {
+    color: orange;
+    text-decoration: none;
+}
+
+.connexion-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff3e6;
+}
+
+.connexion-image video {
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+}
+
+.favori-btn {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

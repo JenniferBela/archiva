@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiva</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="styles/assets/images.jpg" alt="Archiva">        
+            </div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cer.html">CERs</a></li>
+                <li><a href="favoris.html">Mes CER Favoris</a></li>
+                <li><a href="gestion.html">Gestion de CER</a></li>
+            </ul>
+            <button class="connexion">Connexion</button>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="gestion-cer">
+            
+            <div class="gestion-header">
+
+                <div class="filtre">
+                    <span>Filtrer:</span>
+
+                    <select>
+                        <option value="tous">Tous</option>
+                        <option value="reseau">Reseaux et Infra</option>
+                        <option value="genie-logiciel">Genie Logiciel</option>
+                        <option value="gestion-projet">Gestion de Projet</option>
+                        <option value="data">Data</option>
+
+                    </select>
+                </div>
+
+                <a href="add-cer.html" class="ajouter-cer">Ajouter un CER</a>
+
+            </div>
+
+            <table class="cer-table">
+
+                <thead>
+                    <tr>
+                        <th>Titre</th>
+                        <th>Specialite</th>
+                        <th>Niveaux</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Prosit 3.2 - Annuaire Active Directory</td>
+                        <td>Reseaux et Infra; Securite</td>
+                        <td>X3</td>
+                        <td>11/07/2024</td>
+                        <td>
+                            <div class="actions">
+                                <button class="editer">Editer</button>
+                                <button class="supprimer">Supprimer</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Prosit 1.2 - Les reseaux LAN</td>
+                        <td>Reseaux et Infra; Securite</td>
+                        <td>X1</td>
+                        <td>13/02/2024</td>
+                        <td>
+                            <div class="actions">
+                                <button class="editer">Editer</button>
+                                <button class="supprimer">Supprimer</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Prosit 4.2 - Charte d'un projet</td>
+                        <td>Gestion de projet</td>
+                        <td>X4</td>
+                        <td>01/07/2024</td>
+                        <td>
+                            <div class="actions">
+                                <button class="editer">Editer</button>
+                                <button class="supprimer">Supprimer</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Prosit 4.2 - Base de donnees analytique</td>
+                        <td>Data</td>
+                        <td>X3</td>
+                        <td>11/07/2024</td>
+                        <td>
+                            <div class="actions">
+                                <button class="editer">Editer</button>
+                                <button class="supprimer">Supprimer</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Prosit 1.2 - IHM intuitives</td>
+                        <td>Genie logiciel</td>
+                        <td>X1</td>
+                        <td>11/07/2024</td>
+                        <td>
+                            <div class="actions">
+                                <button class="editer">Editer</button>
+                                <button class="supprimer">Supprimer</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>SAM Gestion des ressources humaines</td>
+                        <td>Gestion de projet</td>
+                        <td>X5</td>
+                        <td>11/09/2024</td>
+                        <td>
+                            <div class="actions">
+                                <button class="editer">Editer</button>
+                                <button class="supprimer">Supprimer</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Prosit 4.3 - Investigation numerique</td>
+                        <td>Securite</td>
+                        <td>X3</td>
+                        <td>11/07/2024</td>
+                        <td>
+                            <div class="actions">
+                                <button class="editer">Editer</button>
+                                <button class="supprimer">Supprimer</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+
+            <div class="footer-column">
+                <img src="styles/assets/images.jpg" alt="Archiva" class="footer-logo">
+
+                <p>jenniferbelante@archiva.com</p>
+                <p>+237 650 468 752</p>
+                <p>Yansoki, Douala</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Navigation</h3>
+
+                <a href="index.html">Accueil</a>
+                <a href="cer.html">CERs</a>
+                <a href="favoris.html">Mes CERs favoris</a>
+                <a href="gestion.html">Gestion de CER</a>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Social Profiles</h3>
+
+                <div class="social-profiles">
+                    <a href="#">
+                        <img src="styles/assets/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#">
+                        <img src="styles/assets/instagram.webp" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img src="styles/assets/tiktok.image" alt="TikTok">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
